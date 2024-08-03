@@ -1,7 +1,7 @@
 import java.util.*;
 class A{
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10};
+        int[] arr = {1,10,3,1,10};
         int target = 10;
         System.out.println(allIndex(arr, target, 0));
     }
