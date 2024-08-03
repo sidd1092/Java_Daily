@@ -16,6 +16,7 @@ class largestElementInaRotatedArray {
     public static void main(String[] args) {
         int[] arr = {5,6,7,8,88,99,100,1,2,3,4};
         int ind = findPivot(arr);
+        //finding the largest element in the rotated array using the pivot index found above
         if(ind == 0) {
             System.out.println(arr[arr.length - 1]);
         } else {
