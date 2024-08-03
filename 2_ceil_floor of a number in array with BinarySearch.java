@@ -1,4 +1,4 @@
-class A {
+class ceil_floor_of_a_number_in_array_with_BinarySearch {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,7,8,12,13,14,21,40};
         int num = 5;

@@ -1,5 +1,5 @@
 import java.util.*;
-class A{
+class all_index_of_element_in_array_using_recurrsion{
     public static void main(String[] args) {
         int[] arr = {1,10,3,1,10};
         int target = 10;

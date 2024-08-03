@@ -2,7 +2,7 @@
 
 // import java.util.*;
 
-class GFG {
+class linear_search_using_recusion {
 	public static void main (String[] args) {
 	    int[] arr = {1,2,3,456,67,49,84,31,8,3,18,3,16};
 		System.out.println("found at index = "+find(arr,1,18));

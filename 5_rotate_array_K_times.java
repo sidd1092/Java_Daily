@@ -1,5 +1,5 @@
 import java.util.*;
-class rotate{
+class rotate_array_K_times{
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,7,8,9};
         Scanner sc = new Scanner(System.in);
