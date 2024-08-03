@@ -8,11 +8,11 @@ class GFG {
 		System.out.println("found at index = "+find(arr,1,18));
 		
 	}
-	static int find(int[] arr,int i,int x){
+	static int find(int[] arr,int i,int target){
         if(i==arr.length)
             return -1;
-        if(arr[i]==x)
+        if(arr[i]==target)
             return i;
-        return find(arr,i+1,x);
+        return find(arr,i+1,target);
     }
 }
