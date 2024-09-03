@@ -4,18 +4,18 @@ public class Subseq {
     public static void main(String[] args) {
         list.clear();
         subseq("","ABC");
-        Collections.sort(list);
+        // Collections.sort(list);
         System.out.println(list);
     }
-    public static void subseq(String processed, String unprocessed){
-        if(unprocessed.isEmpty()){
-            list.add(processed);
+    public static void subseq(String output, String input){
+        if(input.isEmpty()){
+            list.add(output);
             return;
         }
-        char ch = unprocessed.charAt(0);
-        unprocessed = unprocessed.substring(1);
-        subseq(processed+ch, unprocessed);
-        subseq(processed, unprocessed);
+        char ch = input.charAt(0);
+        // input = input.substring(1);
+        subseq(output+ch, input.substring(1));
+        subseq(output, input.substring(1));
     }
     
 }
