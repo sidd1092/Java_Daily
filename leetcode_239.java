@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/sliding-window-maximum/
 //without deque
 //without TLE
-class Solution {
+class leetcode_239 {
     public int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         int[] res = new int[n-k+1];
