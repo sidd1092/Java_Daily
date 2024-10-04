@@ -1,64 +1,40 @@
-import java.util.*;
-
-class MinimumSwap {
-    static int swapAsc(int[] arr) {
-        int n = arr.length;
-        int temp;
-        int count = 0;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < (n - i - 1); j++) {
-                if (arr[j] > arr[j + 1]) {
-                    temp = arr[j];
+import java.util.Scanner;
+public class BestBubble {
+    public static int bubbleSort(int[] arr,int n , boolean ascending )
+    {
+        int swaps = 0;
+        for(int i = 0; i < n; i++)
+        {
+            for(int j = 0; j < n - i - 1; j++)
+            {
+                if(ascending && arr[j] > arr[j + 1] || !ascending && arr[j] < arr[j + 1])
+                {
+                    int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    count++;
-                    swapped = true;
+                    swaps++;
                 }
             }
-            if (!swapped)
-                break;
         }
-        return count;
+        return swaps;
     }
-
-    static int swapDes(int[] arr) {
+    public static int findMinSwaps(int[] arr){
         int n = arr.length;
-        int temp;
-        int count = 0;
-        boolean swapped;
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] < arr[j + 1]) {
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    count++;
-                    swapped = true;
-                }
-            }
-            if (!swapped)
-                break;
-        }
-        return count;
+        int[] arrASC = arr.clone();
+        int[] arrDESC = arr.clone();
+        int swapsASC = bubbleSort(arrASC, n, true);
+        int swapsDESC = bubbleSort(arrDESC, n, false);
+        return Math.min(swapsASC, swapsDESC);
     }
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int N = in.nextInt();
-        int[] arr = new int[N];
-        for (int i = 0; i < N; i++) 
-            arr[i] = in.nextInt();
-
-        int[] arrAsc = Arrays.copyOf(arr, arr.length);
-        int[] arrDes = Arrays.copyOf(arr, arr.length);
-
-        int swapsAscending = swapAsc(arrAsc);
-        int swapsDescending = swapDes(arrDes);
-
-        int minSwaps = Math.min(swapsAscending, swapsDescending);
-        System.out.println(minSwaps);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++)
+        {
+            arr[i] = sc.nextInt();
+        }
+        System.out.print(findMinSwaps(arr));
+        sc.close();
     }
 }
