@@ -1,5 +1,5 @@
 import java.util.*;
-public class BestBubble 
+public class CODEVITA_BestBubble
 {
     public static int bubbleSort(int[] arr, int n, boolean ascending) 
     {
@@ -38,10 +38,7 @@ public class BestBubble
         int n = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) 
-        {
             arr[i] = sc.nextInt();
-        }
         System.out.print(findMinSwaps(arr));
-        sc.close();
     }
 }
