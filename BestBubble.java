@@ -1,36 +1,43 @@
-import java.util.Scanner;
-public class BestBubble {
-    public static int bubbleSort(int[] arr,int n , boolean ascending )
+import java.util.*;
+public class BestBubble 
+{
+    public static int bubbleSort(int[] arr, int n, boolean ascending) 
     {
-        int swaps = 0;
-        for(int i = 0; i < n; i++)
+        int swap = 0;
+        boolean swapped;
+        for (int i = 0; i < n; i++) 
         {
-            for(int j = 0; j < n - i - 1; j++)
+            swapped = false;
+            for (int j = 0; j < n - i - 1; j++) 
             {
-                if(ascending && arr[j] > arr[j + 1] || !ascending && arr[j] < arr[j + 1])
+                if (ascending && arr[j] > arr[j + 1] || !ascending && arr[j] < arr[j + 1]) 
                 {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    swaps++;
+                    swap++;
+                    swapped = true;
                 }
             }
+            if (!swapped) break;
         }
-        return swaps;
+        return swap;
     }
-    public static int findMinSwaps(int[] arr){
+    public static int findMinSwaps(int[] arr) 
+    {
         int n = arr.length;
-        int[] arrASC = arr.clone();
-        int[] arrDESC = arr.clone();
-        int swapsASC = bubbleSort(arrASC, n, true);
-        int swapsDESC = bubbleSort(arrDESC, n, false);
-        return Math.min(swapsASC, swapsDESC);
+        int[] arr1 = arr.clone();
+        int[] arr2 = arr.clone();
+        int ASC = bubbleSort(arr1, n, true);
+        int DESC = bubbleSort(arr2, n, false);
+        return Math.min(ASC, DESC);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        for(int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) 
         {
             arr[i] = sc.nextInt();
         }
