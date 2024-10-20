@@ -35,7 +35,7 @@ public class CODEVITA_BoardGame {
     }
     int result = minMoves(grid,M,N, startx, starty, endx, endy, movesx, movesy);
     System.out.print(result);
-
+    sc.close();
   }
 
 
