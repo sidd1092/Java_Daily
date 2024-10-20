@@ -4,7 +4,7 @@ public class CODEVITA_BoardGame {
     int x;
     int y;
     int moves;
-    Cell(int x, int y, int moves){
+    Cell(int x, int y,  int moves){
       this.x = x;
       this.y = y;
       this.moves = moves;
