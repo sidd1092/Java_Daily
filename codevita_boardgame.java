@@ -31,6 +31,7 @@ public class CODEVITA_BoardGame {
 
     if(startx == endx && starty == endy){
       System.out.print(0);
+      sc.close();
       return;
     }
     int result = minMoves(grid,M,N, startx, starty, endx, endy, movesx, movesy);

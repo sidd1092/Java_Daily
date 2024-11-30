@@ -54,5 +54,6 @@ public class CODEVITA_GoodString {
             res += good;
         }
         System.out.print(res);
+        scanner.close();
     }
 }

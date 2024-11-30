@@ -19,5 +19,6 @@ public class CODEVITA_ZeroCount {
                 System.out.print(min);
             }
         }
+        sc.close();
     }
 }

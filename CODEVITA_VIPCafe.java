@@ -27,5 +27,6 @@ public class CODEVITA_VIPCafe {
             priorities[maxIndex] = -1;
         }
         System.out.print(count);
+        sc.close();
     }
 }

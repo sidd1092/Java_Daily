@@ -9,6 +9,7 @@ class CODEVITA_Orchard
         if (!isValid(ashok_R) || !isValid(anand_R)) 
         {
             System.out.print("Invalid input");
+            sc.close();
             return;
         }
         int ashok_P = calposs(ashok_R);
@@ -19,6 +20,7 @@ class CODEVITA_Orchard
             System.out.print("Anand");
         else
             System.out.print("Draw");
+        sc.close();
     }
     private static boolean isValid(String row) 
     {
