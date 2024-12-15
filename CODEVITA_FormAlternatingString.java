@@ -1,4 +1,4 @@
-// link: https://www.hackerrank.com/contests/codevita-9/challenges/form-alternating-string
+//checked
 import java.util.*;
         
     class CODEVITA_FormAlternatingString
@@ -45,3 +45,4 @@ import java.util.*;
         return     CosToFReMoVaL;
     }      
 }
+// SIDDHANT SRIVASTAVA
