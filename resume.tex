@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage[normalem]{ulem}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+\setstretch{1.09}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & #2 \\
+            \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-10pt} % Adjusted space
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-10pt} % Adjusted space
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \small#1 & #2 \\
+        \end{tabular*}\vspace{-10pt} % Adjusted space
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\begin{document}
+
+%----------HEADING----------
+
+\begin{minipage}[c]{0.20\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{photo.jpg} % Replace with your image path
+\end{minipage}%
+\vrule width 1pt % Vertical line after the image
+\hspace{10pt} % Adds horizontal space between the line and the text
+\begin{minipage}[c]{0.7\textwidth}
+        \raggedright % Align text to the left
+        {\Huge \textbf{\scshape Siddhant Srivastava}} \\[7pt] % Reduced vertical space
+        \textit{Delhi, India} \\[9pt] % Reduced vertical space
+        \faPhone \ \href{tel:+916386016689}{+91 6386016689} \, $|$ \,
+        \faEnvelope \ \href{mailto:ssiddhant1009@gmail.com}{ssiddhant1009@gmail.com} \\[5pt] % Reduced vertical space
+        \faLinkedinSquare \ \href{https://linkedin.com/in/siddhant-srivastava-}{\underline{LinkedIn}} \, $|$ \,
+        \faGithub \ \href{https://github.com/sidd1092}{\underline{GitHub}}
+        % \, $|$ \,
+        % \faGlobe \ \href{https://aadi1x.vercel.app}{\underline{Portfolio}}
+\end{minipage}
+
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+        \text{I am a final-year BTech CSE student skilled in Java and Python for machine learning. As Vice President of the CSI Club, I have developed leadership and collaboration skills. Passionate about competitive programming, I seek a rewarding opportunity to apply my problem-solving abilities and contribute to a company’s success while growing professionally.}
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {SRM Institute of Science and Technology}{\textit{\large September 2021 --  June 2025}}
+            {Bachelor of Technology in Computer Engineering, \large  CGPA: 8.26}{}
+        \resumeSubheading
+            {S.K.D. Academy}{\textit{ April 2020 -- July 2021}}
+            {12th, \large Score: 86.5\%}{}
+        \resumeSubheading
+            {S.K.D. Academy}{\textit{April 2018 -- May 2019}}
+            {10th, \large Score: 82.6\%}{}
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Smart Learning Optimizer} \href{https://github.com/sidd1092/Smart-Learning-Optimizer}{\faGithub} $|$ \emph{Python, TensorFlow, Tesseract-OCR}}{}
+            \resumeItemListStart
+                \resumeItem{Automated PDF note extraction and rephrasing for clarity, using machine learning to organize content into N daily PDFs for structured learning over N days.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Guess the DIGIT} \href{https://github.com/sidd1092/Guess_the_Digit}{\faGithub} $|$ \emph{Python, TensorFlow, Keras, Pygame, OpenCV, NumPy}}{}
+            \resumeItemListStart
+                \resumeItem{"Guess the DIGIT" is a Python project that recognizes handwritten digits using a CNN. It features a Pygame-based UI for real-time digit prediction.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{EDITH: An Intelligent Assistant} \href{https://github.com/sidd1092/EDITH}{\faGithub} $|$ \emph{Python, Tesseract, LDA, NLTK}}{}
+            \resumeItemListStart
+                \resumeItem{Designed to help streamline various tasks such as document summarization, OCR, and email fetching.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Languages}{: JAVA, Python, MySQL} \\
+         \textbf{Technologies and Core Competencies}{: DSA, OOPs, OS, DBMS, Machine Learning Algorithms.} \\
+         \textbf{Dev tools}{: Visual Studio Code, Jupyter NB, GitHub, Git, MySQL Workbench.} \\
+         \textbf{Soft skills}{: Problem analytics, Communication, Leadership, Team Work, Management.}
+        }}
+\end{itemize}
+
+%-----------ACHIEVEMENTS AND CERTIFICATIONS-----------
+\section{Achievements and Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+                \text{Certification in \textbf{JAVA}  } \href{https://www.hackerrank.com/certificates/2f1e67dd316d}{\faExternalLink} from HackerRank.} \\
+                \text{Certification in \textbf{PROBLEM SOLVING}  } \href{https://www.hackerrank.com/certificates/b30701b6fddb}{\faExternalLink} from HackerRank} \\
+                \text{Received a certificate in \textbf{Google Data Analytics  } \href{https://www.coursera.org/account/accomplishments/specialization/certificate/YHM8REHHFM4S}{\faExternalLink} from Coursera.} \\
+                \text{Tackled \textbf{200+} DSA problems on \textbf{Leetcode} \href{https://leetcode.com/ssiddhant1009}{\faExternalLink}.} \\
+                \text{Participated actively in various \textbf{Coding Competitions}.}}
+        }}
+\end{itemize}
+
+%-----------POSITION OF RESPONSIBILITY-----------
+\section{Position of Responsibility}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Computer Society of India (CSI) - SRM NCR Treasurer}}{\textit{February 2023 -- February 2024}}
+        \resumeItemListStart
+            \resumeItem{Managed finances, sponsorships, and budgeting to organize workshops, expert lectures, and events for a 150+ member developer community.}
+        \resumeItemListEnd
+        \resumeProjectHeading
+    {\textbf{Computer Society of India (CSI) - SRM NCR Vice President}}{\textit{February 2024 -- February 2025}}
+    \resumeItemListStart
+        \resumeItem{Led a 150+ member developer community, overseeing events, partnerships, and initiatives to foster technical growth and collaboration.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

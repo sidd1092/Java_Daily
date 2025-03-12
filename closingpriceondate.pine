@@ -1,0 +1,15 @@
+// ssiddhant508
+//@version=6
+indicator("Closing Price", overlay=true)
+
+// input date
+date = input.time(timestamp("2025-01-01T00:00:00"), title="Date")
+
+// get close price of last candle of that date
+var float closePrice = na
+if (dayofmonth(time) == dayofmonth(date) and month(time) == month(date) and year(time) == year(date))
+    closePrice := close
+
+// plot close price as a horizontal line
+if (not na(closePrice))
+    line.new(x1=timestamp("2025-01-01T00:00:00"), y1=closePrice, x2=timestamp("2025-01-02T00:00:00"), y2=closePrice, color=color.purple, width=4)
